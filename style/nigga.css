@@ -1,0 +1,55 @@
+
+body{
+  font-family: "Kanit";
+  background-color: #343131;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 678px) {
+  .container {
+  /* border: 3px solid red; */
+  grid-template-rows: 50px 50px 50px 1fr
+  50px 50px 50px;
+  grid-template-columns: 20fr;
+  /* margin: 30px; */
+  grid-template-areas:
+  "header"
+  "banner"
+  "left-aside"
+  "main"
+  "right-aside"
+  "low-content"
+  "footer";
+  }
+}
+
+.warpper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* จัดกึ่งกลางแนวนอน */
+  align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+  background-color: #FF8A5C;
+  width: 100%; /* ขนาดเต็มหน้าจอ */
+  margin: 0 auto; /* จัดให้อยู่ตรงกลางในแนวนอน */
+  padding: 10px; /* เพิ่มช่องว่างภายใน */
+  box-sizing: border-box; /* ป้องกันการขยายตัวเกินขนาดจาก padding */
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+  align-items: center;
+  gap: 8rem; /* ระยะห่างเท่ากันระหว่างลิงก์ */
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+  transition: all 0.3s ease; /* เพิ่ม transition สำหรับเอฟเฟกต์ */
+}
+
+nav a:hover {
+  color: #343131; /* เปลี่ยนสีตัวอักษรเมื่อ hover */
+}

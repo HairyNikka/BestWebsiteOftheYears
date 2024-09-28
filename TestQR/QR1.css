@@ -1,0 +1,130 @@
+
+body{
+    font-family: "Kanit";
+    margin: 0;
+    padding: 0;
+    background: #343131;  
+  }
+  .QRimg{
+    border: 5px  solid #FFC38B;
+    border-radius: 15px;
+    margin: 50px 0 50px 0;
+    width: 300px;
+    height: 300px;
+    position: static;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column; /* เปลี่ยนเป็น column เพื่อเรียงองค์ประกอบในแนวดิ่ง */
+    align-items: center; 
+    justify-content: center;
+  }
+
+.coolinput {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    position: static;
+    max-width: 240px;
+  }
+  
+  .coolinput label.text {
+    font-size: 1.2rem;
+    color: #FFC38B;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 10px;
+    padding: 6px 3px;
+    /* background: #343131; */
+    width: fit-content;
+  }
+  
+  .coolinput input[type=text].input {
+    padding: 11px 10px;
+    font-size: 1rem;
+    border: 3px #FFC38B solid;
+    border-radius: 5px;
+    background: #ffffff;
+  }
+  
+  .coolinput input[type=text].input:focus {
+    outline: none;
+  }
+
+  /* ปุ่ม */ 
+  .button {
+    font-family: "Kanit";
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    margin: 8px 0 8px 0;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    color: #343131;
+    transition: all 1000ms;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    outline: 3px solid #FFC38B;
+    background: #ffffff;
+  }
+  
+  button:hover {
+    color: #343131;
+    transform: scale(1.05);
+    outline: 3px solid #FFC38B;
+    box-shadow: 4px 5px 17px -4px #e1ac7b;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #FFC38B;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  button:hover::before {
+    width: 250%;
+  }
+  
+
+  .warpper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+    background-color: #FF8A5C;
+    width: 100%; /* ขนาดเต็มหน้าจอ */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลางในแนวนอน */
+    padding: 10px; /* เพิ่มช่องว่างภายใน */
+    box-sizing: border-box; /* ป้องกันการขยายตัวเกินขนาดจาก padding */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กึ่งกลาง */
+    align-items: center;
+    gap: 8rem; /* ระยะห่างเท่ากันระหว่างลิงก์ */
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+    color: #ffffff;
+    transition: all 0.3s ease; /* เพิ่ม transition สำหรับเอฟเฟกต์ */
+  }
+  
+  nav a:hover {
+    color: #343131; /* เปลี่ยนสีตัวอักษรเมื่อ hover */
+  }
